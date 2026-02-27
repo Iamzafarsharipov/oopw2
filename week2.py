@@ -1,5 +1,5 @@
 class BikeStation:
-    def __init__(self,name:str,total_docks:int,rented_bikes=0:int)->None:
+    def __init__(self,name:str,total_docks:int,rented_bikes=0)->None:
         self._name=name
         self.total_docks=total_docks        
         self.rented_bikes=rented_bikes
