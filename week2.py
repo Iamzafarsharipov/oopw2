@@ -1,5 +1,5 @@
 class BikeStation:
-    def __init__(self,name:str,total_docks:int,rented_bikes:int)->None:
+    def __init__(self,name:str,total_docks:int,rented_bikes=0:int)->None:
         self._name=name
         self.total_docks=total_docks        
         self.rented_bikes=rented_bikes
@@ -42,7 +42,7 @@ class BikeStation:
         if bikes>self._rented_bikes:
             raise ValueError("Cannot dock more than rented")
         self._rented_bikes-=bikes
-s = BikeStation("Central Park", 25, 0)
+s = BikeStation("Central Park", 25)
 print(s.name, s.available_bikes, s.rental_rate)
 s.rent(15)
 print(s.rented_bikes, s.rental_rate)
